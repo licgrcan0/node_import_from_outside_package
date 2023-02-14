@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pwsh -NoProfile -Command 'New-Item -Force -ItemType SymbolicLink -Path dependencies -Value ../dependency-project/deps/ -ErrorAction SilentlyContinue' && mocha --reporter mocha-teamcity-reporter index"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "babel-plugin-rewire": "^1.2.0",
+    "core-js": "^3.28.0",
+    "mocha": "^10.2.0",
+    "mocha-teamcity-reporter": "^4.2.0",
+    "require-all": "^3.0.0"
+  }
+}

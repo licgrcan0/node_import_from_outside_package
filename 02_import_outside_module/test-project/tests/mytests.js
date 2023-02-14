@@ -1,0 +1,1 @@
+import first from 'foo/first.js'
